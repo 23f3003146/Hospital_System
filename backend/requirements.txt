@@ -6,3 +6,4 @@ python-dotenv==1.0.1
 Werkzeug==3.0.1
 # greenlet==2.0.2
 Flask-SQLAlchemy
+redis
