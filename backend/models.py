@@ -102,7 +102,6 @@ class Vital(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     patient_id = db.Column(db.Integer, db.ForeignKey('patient.id'))
     appointment_id = db.Column(db.Integer, db.ForeignKey('appointment.id'), nullable=True)
-    patient_id = db.Column(db.Integer, db.ForeignKey('patient.id'))
     medical_record_id = db.Column(db.Integer, db.ForeignKey('medical_record.id'), nullable=True)
     label = db.Column(db.String(100))
     value = db.Column(db.String(50))
@@ -115,5 +114,3 @@ class Review(db.Model):
     rating = db.Column(db.Float)
     date = db.Column(db.String(50))
     comment = db.Column(db.Text)
-
-
